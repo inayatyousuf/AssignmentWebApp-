@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
+    <title>Task</title>
+</head>
+
+<body>
+    <header>
+        <!-- icon header start-->
+        <ul class="nav justify-content-end"
+            style="color: white; background: linear-gradient(90deg, rgba(106,106,228,1) 2%, rgba(36,47,84,1) 65%, rgba(8,24,27,1) 100%, rgba(81,73,205,1) 100%); ">
+            <li class="nav-item">
+                <i class="fa-brands fa-facebook-f nav-link"></i>
+            </li>
+            <li class="nav-item">
+                <i class="fa-brands fa-twitter nav-link"></i>
+            </li>
+            <li class="nav-item">
+                <i class="fa-brands fa-linkedin-in nav-link"></i>
+            </li>
+            <li class="nav-item">
+                <i class="fa-brands fa-google-plus-g nav-link"></i>
+            </li>
+        </ul>
+        <!-- icon header end -->
+
+        <!-- second header starts -->
+        <nav class="navbar navbar-dark bg-dark justify-content-between">
+            <a class="navbar-brand">My Website</a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active text-light" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  text-light" href="#">HOW IT WORKS</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- second header ends -->
+
+
+        <div class="form-row text-light mx-auto my-4 d-flex align-items-center" style="gap:10rem;">
+            <div class="form-group col-md-5">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Welcome to The Community</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quasi iste ipsam,
+                        dolorum aperiam deleniti in quia alias at rerum error? Minus suscipit qui cupiditate libero,
+                        consequuntur nemo similique, labore rem esse exercitationem dicta excepturi. Deleniti provident
+                        veniam dolorem qui.</p>
+                    <a href="#" class="btn btn-outline-light"><i class="fa-solid fa-user-plus"></i> Register</a>
+                </div>
+            </div>
+            <div class="form-group col-md-4" style="background-color: rgba(235, 228, 228, 0.2);">
+                <form class="form-signin p-3" id="form" name="form" method="get" action="/home.html" onsubmit="return validate()">
+                    <label for="inputEmail">Email address</label>
+                    <input type="email" autocomplete="off" id="inputEmail" class="form-control" placeholder="Email address" name= "email">
+                        <div id="email-error"></div>
+                    <label for="inputPassword" class="mt-2">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" name= "password">
+                    <div id="password-error"></div>
+                    <div class="mb-1 mt-2">
+                        <a href="#" class="text-light">Forgot Password?</a>
+                    </div>
+                    <button class="btn btn-lg btn-outline-light btn-block" type="submit">Sign in</button>
+                    <div class="mt-1 text-center ">
+                        <span>Not Registered? <a href="#" class="text-light font-weight-bold">Create an
+                                account</a></span>
+                    </div>
+                    <div class="px-2 mt-2 d-flex justify-content-between">
+                        <i class="fa-brands fa-facebook-f p-2"
+                            style="background-color:#3b5998; cursor: pointer; border: 2px solid white;"></i>
+                        <i class="fa-brands fa-twitter p-2"
+                            style="background-color:rgb(0, 106, 255);cursor: pointer;border: 2px solid white;"></i>
+                        <i class="fa-brands fa-linkedin-in p-2"
+                            style="background-color:#0077b5;cursor: pointer;border: 2px solid white;"></i>
+                        <i class="fa-brands fa-google-plus-g  p-2"
+                            style="background-color:rgba(247, 11, 11, 0.786);cursor: pointer;border: 2px solid white;"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- header ends -->
+
+    <!-- About section start-->
+    <div class="my-5 mx-5" style="max-width: 100%;">
+        <div class="row no-gutters">
+            <div class="col-md-5">
+                <div>
+                    <img class="about__image about-1-image" src="./WebAppImages/about-2.jpg" class="card-img" alt="...">
+                    <img class="about__image about-2-image" src="./WebAppImages/about-1.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="card-body" style="margin-top: 7rem">
+                    <h3 class="card-title">About Us</h3>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, laudantium.
+                        Numquam, officiis iure ducimus explicabo alias voluptate sequi, excepturi est doloribus,
+                        accusamus rem rerum harum aliquam corporis. Sed tempora reprehenderit in, praesentium id, quasi
+                        a perferendis magnam illum eum ratione numquam at cumque magni voluptatum accusantium laudantium
+                    <p>
+                        deserunt optio itaque voluptate blanditiis nulla fugit. Placeat delectus veritatis ad iste
+                        voluptas laboriosam consequuntur quas fugit perspiciatis libero illum repellat impedit, omnis
+                        distinccimus corrupti. Sapiente eveniet praesentium voluptas dolor, debitis ipsum
+                        minus facilis cumque quae fugiat officiis voluptate odio soluta esse quia illo dolores quis est
+                        nostrum illum atque fugit?
+                    </p>
+                    <p>
+                        Incidunt voluptatibus aliquid dolores atque ratione et ex quis magni
+                        ctio totam veritatis qui et porro repellendus ducimus deserunt.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About section ends -->
+
+    <!-- how-it-works section starts      -->
+    <div class="mx-5 my-5">
+        <h3>How It Works</h3>
+        <div class="card p-2 d-flex align-items-center"
+            style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;">
+            <h5 class="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis aliquam tempore
+                iusto.</h5>
+            <p class="card-text">This is a wider card with supporting text below </p>
+            <a href="#" class="btn btn-outline-dark" style="width:10rem"><i class="fa-solid fa-user-plus"></i>
+                Register</a>
+        </div>
+
+        <div class="d-flex mt-3 justify-content-between text-center" id="card__block">
+            <div class="card p-2" style="width: 23rem;">
+                <img src="./WebAppImages/icon-4.png" class="card-img-top mx-auto" style="width: 7rem;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Register for free</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card p-2" style="width: 23rem;">
+                <img src="./WebAppImages/icon-1.png" class="card-img-top mx-auto" style="width: 7rem; height: 4rem;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Take Surveys</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+            <div class="card p-2" style="width: 23rem;">
+                <img src="./WebAppImages/icon-6.png" class="card-img-top mx-auto" style="width: 7rem; height: 4rem;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Redeem</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="mt-5">
+            <h1>Global Incentive partners</h1>
+            <div class="d-flex justify-content-end">
+                <img src="./WebAppImages/logo-amazon-404px-grey.png" style="width: 5rem; margin-right: 4rem;" alt="">
+                <img src="./WebAppImages/target-png.png" style="width: 4rem; margin-right: 4rem;" alt="">
+                <img src="./WebAppImages/Starbucks-Logo-600x600-gray.png" style="width: 4rem; margin-right: 4rem;" alt="">
+                <img src="./WebAppImages/itunes.png" style="width: 4rem; margin-right: 2rem;" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- how-it-works section ends      -->
+
+
+    <!-- footer  -->
+    <!-- Footer -->
+<footer class="bg-dark text-center text-white pt-4">
+      <!-- Section: Links -->
+      <section >
+        <!--Grid row-->
+        <div class="row ml-3 mb-4">
+        
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left" style="line-height: 2rem">
+            <h5 class="text-uppercase">Contact Us</h5>
+  
+            <ul class="list-unstyled mb-0 ">
+              <li>
+                <a href="#!" class="text-white"><i class="fa-solid fa-location-dot"></i> 123 Street, New York USA</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fa-solid fa-phone"></i> +0123456789</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fa-solid fa-envelope"></i> info@example.com</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter mx-1"></i>
+                <i class="fa-brands fa-linkedin-in mx-1"></i>
+                <i class="fa-brands fa-google-plus-g mx-1"></i>
+            </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left" style="line-height: 2rem">
+            <h5 class="text-uppercase">Quick Links</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white"><i class="fa-solid fa-greater-than"></i> Terms of use</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"> <i class="fa-solid fa-greater-than"></i> Privacy policy</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"><i class="fa-solid fa-greater-than"></i> FQA's</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-left" style="line-height: 2rem">
+            <h5 class="text-uppercase">Write to us</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">E-mail</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">xyz@mail.com</a>
+              </li>
+             
+          </div>
+        </div>
+       
+      </section>
+      <!-- Section: Links -->
+    </div>
+
+  <hr style="background-color: grey"/>
+    <!-- Copyright -->
+    <div class="text-center p-3" >
+      © 2022 Copyright:
+      <a class="text-white" href="#">@sitename.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
