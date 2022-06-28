@@ -10,12 +10,10 @@ const passwordError = document.getElementById('password-error');
 email.addEventListener('textInput', email_verify)
 password.addEventListener('textInput', password_verify)
 
-form.addEventListener('submit', (event)=> {
-    event.preventDefault()
-})
 
-function validate() {
-    console.log("hello")
+
+function validate(e) {
+    e.preventDefault()
     // const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(email.value.length < 9){
         email.style.border = "2px solid red"

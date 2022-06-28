@@ -55,3 +55,19 @@ header{
   }
  }
 
+
+/* email template  css start*/
+.top__section{
+    position: relative;
+    z-index: 1000;
+}
+/* .top__section::after {
+    content: '';
+    display: block;
+    position: relative;
+    rotate: -5deg;
+    background-color: #ddac91;
+    height: 4rem;
+    transform: scaleX(2);
+
+} */
